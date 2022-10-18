@@ -2,7 +2,7 @@
 
 This repository contains a Pathogen/Vundle/Plug vim plugin.
 It provides syntax highlighting for
-[ERT](https://github.com-equinor/ert) configuration files.
+[ERT](https://github.com/equinor/ert) configuration files.
 
 ## Install
 
