@@ -10,14 +10,14 @@ syn keyword ertRequired DATA_FILE ECLBASE JOBNAME GRID
 syn keyword ertRequired NUM_REALIZATIONS NUM_CPU
 "
 syn keyword ertOptional DATA_KW LICENSE_PATH RANDOM_SEED LOG_FILE
-syn keyword ertOptional LOG_LEVEL DELETE_RUNPATH END_DATE ENSPATH
+syn keyword ertOptional LOG_LEVEL ENSPATH
 syn keyword ertOptional HISTORY_SOURCE REFCASE_HISTORY REFCASE_SIMULATED
 syn keyword ertOptional REFCASE INSTALL_JOB OBS_CONFIG RESULT_PATH
 syn keyword ertOptional RUNPATH RUNPATH_FILE RUN_TEMPLATE
 "
 syn keyword ertSimuCtrl MIN_REALIZATIONS STOP_LONG_RUNNING MAX_RUNTIME
 "
-syn keyword ertParamKey FIELD GEN_DATA GEN_KW GEN_PARAM GEN_KW_TAG_FORMAT
+syn keyword ertParamKey FIELD GEN_DATA GEN_KW GEN_KW_TAG_FORMAT
 syn keyword ertParamKey SURFACE SUMMARY
 "
 syn keyword ertESAlgthm ENKF_ALPHA EKF_BOOTSTRAP ENKF_FORCE_NCOMP
@@ -42,8 +42,6 @@ syn keyword ertTORQConf QSUB_CMD QSTAT_CMD QDEL_CMD QUEUE CLUSTER_LABEL
 syn keyword ertTORQConf MAX_RUNNING NUM_NODES NUM_CPUS_PER_NODE
 syn keyword ertTORQConf KEEP_QSUB_OUTPUT SUBMIT_SLEEP DEBUG_OUTPUT
 "
-syn keyword ertRSHQueue RSH_HOST RSH_COMMAND MAX_RUNNING
-"
 syn keyword ertSLURMQue SBATCH SCANCEL SCONTROL SQUEUE PARTITION
 syn keyword ertSLURMQue SQUEUE_TIMEOUT MAX_RUNTIME MEMORY MEMORY_PER_CPU
 syn keyword ertSLURMQue INCLUDE_HOST EXCLUDE_HOST MAX_RUNNING
@@ -51,7 +49,7 @@ syn keyword ertSLURMQue INCLUDE_HOST EXCLUDE_HOST MAX_RUNNING
 syn keyword ertPlotting REFCASE_LIST RFTPATH HOOK_WORKFLOW LOAD_WORKFLOW
 syn keyword ertPlotting LOAD_WORKFLOW_JOB WORKFLOW_JOB_DIRECTORY
 "
-syn keyword ertUnixEnvt SETENV UPDATE_PATH UMASK
+syn keyword ertUnixEnvt SETENV UPDATE_PATH
 "
 syn keyword ertDeprecated RERUN_START CASE_TABLE
 "
@@ -106,7 +104,6 @@ hi def link ertAdvcdOpt           Keyword
 hi def link ertFwdModel           Keyword
 hi def link ertLSFConfg           Keyword
 hi def link ertTORQConf           Keyword
-hi def link ertRSHQueue           Keyword
 hi def link ertSLURMQue           Keyword
 hi def link ertPlotting           Keyword
 hi def link ertUnixEnvt           Keyword
