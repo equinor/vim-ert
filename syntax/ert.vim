@@ -9,8 +9,7 @@ syn case match
 syn keyword ertRequired DATA_FILE ECLBASE JOBNAME GRID
 syn keyword ertRequired NUM_REALIZATIONS NUM_CPU
 "
-syn keyword ertOptional DATA_KW LICENSE_PATH RANDOM_SEED LOG_FILE
-syn keyword ertOptional LOG_LEVEL ENSPATH
+syn keyword ertOptional DATA_KW LICENSE_PATH RANDOM_SEED ENSPATH
 syn keyword ertOptional HISTORY_SOURCE REFCASE_HISTORY REFCASE_SIMULATED
 syn keyword ertOptional REFCASE INSTALL_JOB OBS_CONFIG RESULT_PATH
 syn keyword ertOptional RUNPATH RUNPATH_FILE RUN_TEMPLATE
@@ -21,14 +20,14 @@ syn keyword ertParamKey FIELD GEN_DATA GEN_KW GEN_KW_TAG_FORMAT
 syn keyword ertParamKey SURFACE SUMMARY
 "
 syn keyword ertESAlgthm ENKF_ALPHA EKF_BOOTSTRAP ENKF_FORCE_NCOMP
-syn keyword ertESAlgthm ENKF_RERUN ENKF_TRUNCATION UPDATE_LOG_PATH
+syn keyword ertESAlgthm ENKF_TRUNCATION UPDATE_LOG_PATH
 syn keyword ertESAlgthm UPDATE_SETTINGS
 "
 syn keyword ertAnalysis ANALYSIS_SELECT ANALYSIS_SET_VAR ANALYSIS_COPY
 syn keyword ertAnalysis ITER_CASE ITER_COUNT ITER_RETRY_COUNT
-syn keyword ertAnalysis MAX_RESAMPLE MAX_SUBMIT SINGLE_NODE_UPDATE
+syn keyword ertAnalysis MAX_SUBMIT SINGLE_NODE_UPDATE
 "
-syn keyword ertAdvcdOpt DEFINE TIME_MAP SCHEDULE_PREDICTION_FILE
+syn keyword ertAdvcdOpt DEFINE TIME_MAP
 "
 syn keyword ertFwdModel FORWARD_MODEL SIMULATION_JOB JOB_SCRIPT
 syn keyword ertFwdModel QUEUE_SYSTEM QUEUE_OPTION
@@ -49,9 +48,9 @@ syn keyword ertSLURMQue INCLUDE_HOST EXCLUDE_HOST MAX_RUNNING
 syn keyword ertPlotting REFCASE_LIST RFTPATH HOOK_WORKFLOW LOAD_WORKFLOW
 syn keyword ertPlotting LOAD_WORKFLOW_JOB WORKFLOW_JOB_DIRECTORY
 "
-syn keyword ertUnixEnvt SETENV UPDATE_PATH
+syn keyword ertUnixEnvt SETENV 
 "
-syn keyword ertDeprecated RERUN_START CASE_TABLE
+syn keyword ertDeprecated CASE_TABLE SCHEDULE_PREDICTION_FILE
 "
 syn keyword ertPreProc INCLUDE
 "
