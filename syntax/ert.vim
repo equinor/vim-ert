@@ -9,7 +9,7 @@ syn case match
 syn keyword ertRequired DATA_FILE ECLBASE JOBNAME GRID
 syn keyword ertRequired NUM_REALIZATIONS NUM_CPU
 "
-syn keyword ertOptional DATA_KW LICENSE_PATH RANDOM_SEED ENSPATH
+syn keyword ertOptional DATA_KW RANDOM_SEED ENSPATH
 syn keyword ertOptional HISTORY_SOURCE REFCASE_HISTORY REFCASE_SIMULATED
 syn keyword ertOptional REFCASE INSTALL_JOB OBS_CONFIG RESULT_PATH
 syn keyword ertOptional RUNPATH RUNPATH_FILE RUN_TEMPLATE
@@ -19,11 +19,10 @@ syn keyword ertSimuCtrl MIN_REALIZATIONS STOP_LONG_RUNNING MAX_RUNTIME
 syn keyword ertParamKey FIELD GEN_DATA GEN_KW GEN_KW_TAG_FORMAT
 syn keyword ertParamKey SURFACE SUMMARY
 "
-syn keyword ertESAlgthm ENKF_ALPHA ENKF_BOOTSTRAP ENKF_FORCE_NCOMP
-syn keyword ertESAlgthm ENKF_NCOMP ENKF_TRUNCATION UPDATE_LOG_PATH
-syn keyword ertESAlgthm UPDATE_SETTINGS
+syn keyword ertESAlgthm ENKF_ALPHA ENKF_NCOMP ENKF_TRUNCATION 
+syn keyword ertESAlgthm UPDATE_LOG_PATH 
 "
-syn keyword ertAnalysis ANALYSIS_SELECT ANALYSIS_SET_VAR ANALYSIS_COPY
+syn keyword ertAnalysis ANALYSIS_SELECT ANALYSIS_SET_VAR 
 syn keyword ertAnalysis ITER_CASE ITER_COUNT ITER_RETRY_COUNT
 syn keyword ertAnalysis MAX_SUBMIT SINGLE_NODE_UPDATE
 "
