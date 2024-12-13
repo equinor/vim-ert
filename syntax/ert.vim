@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:		ert
 " Filename extensions:	*.ert
-" Maintainer:           Matt Ferrera <msfe@equinor.com>
+" Maintainer:           Matthew Ferrera <msfe@equinor.com>
 
 syn case match
 
@@ -9,48 +9,47 @@ syn case match
 syn keyword ertRequired DATA_FILE ECLBASE JOBNAME GRID
 syn keyword ertRequired NUM_REALIZATIONS NUM_CPU
 "
-syn keyword ertOptional DATA_KW RANDOM_SEED ENSPATH
-syn keyword ertOptional HISTORY_SOURCE REFCASE_HISTORY REFCASE_SIMULATED
-syn keyword ertOptional REFCASE INSTALL_JOB OBS_CONFIG RESULT_PATH
+syn keyword ertOptional DATA_KW DATA_ROOT RANDOM_SEED ENSPATH
+syn keyword ertOptional HISTORY_SOURCE 
+syn keyword ertOptional REFCASE INSTALL_JOB INSTALL_JOB_DIRECTORY OBS_CONFIG
 syn keyword ertOptional RUNPATH RUNPATH_FILE RUN_TEMPLATE
+syn keyword ertOptional REALIZATION_MEMORY CONFIG_DIRECTORY
 "
 syn keyword ertSimuCtrl MIN_REALIZATIONS STOP_LONG_RUNNING MAX_RUNTIME
 "
-syn keyword ertParamKey FIELD GEN_DATA GEN_KW GEN_KW_TAG_FORMAT
-syn keyword ertParamKey SURFACE SUMMARY
+syn keyword ertParamKey FIELD GEN_DATA GEN_KW 
+syn keyword ertParamKey GEN_KW_EXPORT_NAME SURFACE SUMMARY
 "
-syn keyword ertESAlgthm ENKF_ALPHA ENKF_NCOMP ENKF_TRUNCATION 
-syn keyword ertESAlgthm UPDATE_LOG_PATH 
+syn keyword ertESAlgthm ENKF_ALPHA 
+syn keyword ertESAlgthm UPDATE_LOG_PATH STD_CUTOFF
 "
-syn keyword ertAnalysis ANALYSIS_SELECT ANALYSIS_SET_VAR 
-syn keyword ertAnalysis ITER_CASE ITER_COUNT ITER_RETRY_COUNT
-syn keyword ertAnalysis MAX_SUBMIT SINGLE_NODE_UPDATE
+syn keyword ertAnalysis ANALYSIS_SET_VAR 
+syn keyword ertAnalysis MAX_SUBMIT 
 "
 syn keyword ertAdvcdOpt DEFINE TIME_MAP
 "
 syn keyword ertFwdModel FORWARD_MODEL SIMULATION_JOB JOB_SCRIPT
 syn keyword ertFwdModel QUEUE_SYSTEM QUEUE_OPTION
 "
-syn keyword ertLSFConfg LSF_SERVER LSF_QUEUE LSF_RESOURCE LSF_RSH_CMD
-syn keyword ertLSFConfg LSF_LOGIN_SHELL BSUB_CMD BJOBS_CMD BJOBS_CMD
+syn keyword ertDsgnMatx DESIGN_MATRIX
+"
+syn keyword ertLSFConfg LSF_SERVER LSF_QUEUE 
+syn keyword ertLSFConfg BSUB_CMD BJOBS_CMD BJOBS_CMD
 syn keyword ertLSFConfg BHIST_CMD BJOBS_TIMEOUT DEBUG_OUTPUT SUBMIT_SLEEP
 syn keyword ertLSFConfg PROJECT_CODE EXCLUDE_HOST MAX_RUNNING
 "
 syn keyword ertTORQConf QSUB_CMD QSTAT_CMD QDEL_CMD QUEUE CLUSTER_LABEL
-syn keyword ertTORQConf MAX_RUNNING NUM_NODES NUM_CPUS_PER_NODE
+syn keyword ertTORQConf MAX_RUNNING 
 syn keyword ertTORQConf KEEP_QSUB_OUTPUT SUBMIT_SLEEP DEBUG_OUTPUT
-syn keyword ertTORQConf QUEUE_QUERY_TIMEOUT
 "
 syn keyword ertSLURMQue SBATCH SCANCEL SCONTROL SQUEUE PARTITION
 syn keyword ertSLURMQue SQUEUE_TIMEOUT MAX_RUNTIME MEMORY MEMORY_PER_CPU
 syn keyword ertSLURMQue INCLUDE_HOST EXCLUDE_HOST MAX_RUNNING
 "
-syn keyword ertPlotting REFCASE_LIST RFTPATH HOOK_WORKFLOW LOAD_WORKFLOW
+syn keyword ertPlotting HOOK_WORKFLOW LOAD_WORKFLOW
 syn keyword ertPlotting LOAD_WORKFLOW_JOB WORKFLOW_JOB_DIRECTORY
 "
 syn keyword ertUnixEnvt SETENV 
-"
-syn keyword ertDeprecated CASE_TABLE
 "
 syn keyword ertPreProc INCLUDE
 "
@@ -106,7 +105,6 @@ hi def link ertTORQConf           Keyword
 hi def link ertSLURMQue           Keyword
 hi def link ertPlotting           Keyword
 hi def link ertUnixEnvt           Keyword
-hi def link ertDeprecated         Keyword
 hi def link ertPreProc            PreProc
 hi def link ertFormatStr          SpecialChar           
 
